@@ -125,7 +125,7 @@ button:focus{
 
 }
 
-@media screen and (max-width: 550px) {
+@media only screen and (max-width: 550px) {
 
 	#rules{
 		width: 100%;
