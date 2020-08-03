@@ -1,6 +1,9 @@
 body{
 	background-color: #00238b;
 	background-image: linear-gradient(135deg,#ee58ee,#8644ff);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 h1{
