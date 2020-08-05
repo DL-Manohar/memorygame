@@ -169,12 +169,15 @@ function matchChosenCards() {
 
 // a function to flip the card in the grid
 function cardFlipper() {
-	let cardId = this.getAttribute("data-id");
-	chosenCards.push(images[cardId]);
-	chosencardIds.push(cardId);
-	this.setAttribute("src",images[cardId].src);
-	if(chosenCards.length === 2) {
-		setTimeout(matchChosenCards,500);
+	if(chosenCards.length < 2)
+	{
+		let cardId = this.getAttribute("data-id");
+		chosenCards.push(images[cardId]);
+		chosencardIds.push(cardId);
+		this.setAttribute("src",images[cardId].src);
+		if(chosenCards.length === 2) {
+			setTimeout(matchChosenCards,500);
+		}	
 	}
 }
 
