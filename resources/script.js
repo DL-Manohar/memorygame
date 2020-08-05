@@ -176,7 +176,7 @@ function cardFlipper() {
 		chosencardIds.push(cardId);
 		this.setAttribute("src",images[cardId].src);
 		if(chosenCards.length === 2) {
-			setTimeout(matchChosenCards,500);
+			setTimeout(matchChosenCards,700);
 		}	
 	}
 }
